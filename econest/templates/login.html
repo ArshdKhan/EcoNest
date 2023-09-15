@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="{% static 'login_s.css'%}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form>
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input id="email" type="email" placeholder="Email" autocomplete="nope" onkeyup="Myalter()">
+      </div>
+      <div class="input-field">
+        <input id="password" type="password" placeholder="Password" autocomplete="new-password" onkeyup="Myalter()">
+      </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+      <button>Register</button>
+      <button onclick="Myalter()">Sign in</button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script  src="{% static 'script.js'%}"></script>
+
+</body>
+</html>

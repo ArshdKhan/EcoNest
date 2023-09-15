@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoNest</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Poppins:wght@500;600&family=Raleway:wght@500&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Poppins:wght@500&family=Raleway:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Poppins:wght@400;500;600&family=Raleway:wght@500&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bf0796033.js" crossorigin="anonymous"></script>
+    <script src="{% static 'app.js'%}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Vj9E4vpVw3CpszLtxXMFnXdqezzu7GE&callback=initMap&libraries=&v=weekly"defer></script>
+</head>
+    <body>
+
+        <!-- //NAV -->
+        <div class="nav" style="background-color: rgba(255, 255, 255, 0.992);">
+            <a href="{$ static 'home'%}"> <h2 class="navEco">EcoNest! <i class="fa-solid fa-leaf fa-2xs"></i>  </h2> </a>
+            <div class="btn-grp">
+                <div>
+                    <button class="startNow" onclick=window.location.href='{% url 'search' %}'>Start your search now</button>
+                </div>
+                <button class="b1" onclick=window.location.href='{% url 'login' %}'>Log in</button>
+                <button class="b2" onclick=window.location.href='{% url 'login' %}'>Sign up</button>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- //HEADER -->
+        <div class="grid-container">
+        <div class="header">
+            <img class="house" src="{% static 'pngwing.com.png'%}" height="400px" width="400px">
+            <h2 class="econest" >EcoNest!
+                <!-- <img src="nest_eco_leaf_FILL0_wght400_GRAD0_opsz24.png" height="40px" width="40px">  -->
+                <i class="fa-solid fa-leaf fa-2xs"></i>
+            </h2>
+            <hr class="hr">
+            <h6 class="cap">Your Sustainable Housing Hub :)</h6>
+        </div>
+        
+        
+        <!-- //LEFT -->
+        <div class="left" style="background-color:rgba(255, 255, 255, 0.2);"></div>
+
+
+        <!-- /MIDDLE BODY -->
+        <div class="middle" style="background-color:rgba(255, 255, 255, 0.2);">
+            <div class="text">
+            <h1 class="whatWeDo">What we do:</h1>
+                <p>
+                • Many urban areas lack an adequate supply of sustainable and eco-friendly housing options, <br> leaving prospective
+                residents with limited choices when seeking environmentally responsible living spaces.
+                </p>
+                <br>
+                <p>
+                • The substantial upfront expenses associated with sustainable housing, <br> such as installing renewable energy systems or
+                energy-efficient technologies,  often deter individuals from considering these eco-conscious options.
+                </p>
+                <br>
+                <p>
+                • Both property seekers and property owners frequently lack awareness regarding the advantages of sustainable housing, <br> 
+                including lower utility bills, reduced environmental impact, and improved indoor air quality.
+                </p>
+                <br>
+                <p>
+                • Information about eco-friendly housing options is dispersed across various sources,  <br> making it challenging for individuals
+                to access comprehensive, reliable data on available sustainable properties.
+                </p>
+                <br>
+                <p>
+                • Prospective renters and buyers may be uncertain about the long-term financial benefits of sustainable housing, <br>  leading
+                to hesitation in making environmentally responsible choices.
+                </p>
+            </div>
+        </div>
+
+        
+        <!-- //RIGHT -->
+        <div class="right" style="background-color:rgb(255, 255, 225, 0.2);">
+            <img src="{% static 'pngwing.com (1).png'%}">       
+        </div>
+        
+        <div class="footer">
+            <img class="flow" src="{% static 'flow-removebg.png'%}" width="850px" height="650px">
+            <div>
+                <button onclick=window.location.href='{% url 'search' %}' class="tryNow" >Start Your Search</button>
+            </div>
+        </div>
+
+
+        </div>
+
+        <div class="contact" style="background-color: rgba(240, 248, 255, 0.422);">
+            <h2 class="t1">Reach out:</h2>
+            <hr class="hr2">
+            <div class="inputs">
+                <input class="name" type="text" placeholder="Name">
+                <input class="email" type="text" placeholder="Email">
+                <br>
+                <textarea rows="7" cols="43" class="feedback" type="text" placeholder="FeedBack"></textarea>
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="b-submit">Submit</button>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+

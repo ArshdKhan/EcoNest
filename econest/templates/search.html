@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Poppins:wght@500&family=Raleway:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>Search</title>
+    <script src="https://kit.fontawesome.com/9bf0796033.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'search_s.css'%}">
+    <script src="{% static 'maps.js'%}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqvqHN7c-tdKqeDUq-0SXOlDpIwZ7lH6A&libraries=places"></script>
+    <script>
+
+    function openlink()
+    {
+      window.open("maps.html","_self"); 
+    }
+    </script>
+    <script>
+        // function searchLocation() {
+        //     const locationInput = document.getElementById("location").value;
+            
+        //     // Replace 'YOUR_API_KEY' with your actual Google Maps API key
+        //     const apiKey = 'AIzaSyAqvqHN7c-tdKqeDUq-0SXOlDpIwZ7lH6A';
+            
+        //     // Construct the Google Maps URL
+        //     const mapsUrl = `https://www.google.com/maps?q=${locationInput}&key=${apiKey}`;
+
+        //     // Open the Google Maps URL in a new window
+        //     window.open(mapsUrl, '_blank');
+        // }
+        // function convertLocation() {
+        //     const location = document.getElementById("location").value;
+        //     const geocoder = new google.maps.Geocoder();
+
+        //     geocoder.geocode({ address: location }, (results, status) => {
+        //         if (status === "OK" && results[0]) {
+        //             const latitude = results[0].geometry.location.lat();
+        //             const longitude = results[0].geometry.location.lng();
+                    
+        //             console.log(latitude);
+        //             console.log(longitude);
+
+
+        //             // Display the result
+        //             // const resultDiv = document.getElementById("result");
+        //             // resultDiv.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
+        //         } else {
+        //             alert("Location not found");
+        //         }
+        //     });
+        // }
+        function search()
+        {
+            var inputElement = document.getElementById("location");
+            var inputValue = inputElement.value;
+            if (inputValue === "") 
+            {
+                alert("Enter a valid location!");
+            } 
+            else {
+              window.open("maps.html","_self");
+            }
+        }
+  </script>
+</head>
+
+<body>
+      <img class="house" src="{% static 'pngwing.com.png'%}" height="300px" width="300px">
+      <h2 class="econest" >EcoNest!
+          <img src="nest_eco_leaf_FILL0_wght400_GRAD0_opsz24.png" height="40px" width="40px"> 
+      </h2>
+      <hr class="hr">
+    <div class="wrap">
+        <div class="search">
+           <input type="text" id="location" placeholder="Enter location" >
+           <button  type="submit" class="searchButton" onclick="convertLocation()">
+              <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+          </button>
+        </div>
+
+      <div id="map" style="height: 100px; width:100px"></div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+body {
+    box-sizing: border-box;
+    zoom: 0.9;
+  }
+
+  a { 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+   }
+
+  .startNow {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .startNow:hover {
+    background-color: rgba(38, 196, 93, 0.8);
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg,rgb(118, 84, 255),rgba(139, 253, 253, 0.983));
+  }
+  
+.nav {
+  height: 90px;
+  position:fixed;
+  width: 105%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.navEco {
+  display: flex;
+  margin-bottom: -50px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.hr {
+  margin-left: 740px;
+  margin-right: 750px;
+  margin-top: -50px;
+  margin-bottom: 80px;
+  height: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(109, 170, 131, 0.8);
+}
+
+.btn-grp {
+  display:flex;
+  margin-left: 1370px;
+  padding-left: 2px;
+  margin-top: 5px;
+}
+
+.b1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.246);
+  background-color: rgb(146, 137, 230);
+}
+
+.b2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  background-color: rgb(146, 137, 230);
+}
+
+.b1:hover {
+  background-color: rgba(38, 196, 93, 0.8);
+}
+
+.b2:hover {
+  background-color: rgba(38, 196, 93, 0.8);
+}
+
+
+  .header {
+    border: 2px solid transparent;
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 45px;
+    text-align: center;
+    height: 800px;
+    padding-top: 160px;
+    margin-bottom: 25px;
+}
+
+  .econest {
+    margin-bottom: 45px;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 80px;
+    color: rgb(62, 124, 130);
+  }
+
+  .cap {
+    font-size: large;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+
+.house{
+    height: 200px;
+    width: 200px;
+    margin-bottom: -50px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer footer';
+    grid-column-gap: 10px;
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 700px;
+  }
+  
+
+.left {
+    grid-area: left;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  
+
+.middle {
+    grid-area: middle;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+
+.text {
+  font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    text-align: left;
+    font-weight: 1000000;
+
+}
+.whatWeDo {
+  font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(62, 124, 130);
+    text-decoration: underline;
+}
+
+
+
+.right {
+    grid-area: right;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding-top: 80px;
+  }
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(255, 255, 225, 0.2);;
+    
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    height: 800px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+
+  .tryNow {
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 39px;
+    padding: 20px;
+    background-color: rgba(0, 55, 255, 0.315);
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.246);
+  }
+
+  .tryNow:hover {
+    background-color: rgb(134, 215, 165);
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+
+.contact {
+  height: 600px;
+  width: 1850px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: none;
+  border-radius: 20px;
+}
+
+.t1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.hr2 {
+  align-items: center;
+  background-color: rgb(0, 17, 255);
+  height: 3px;
+  width: 200px;
+  margin-top:-10px;
+}
+
+.inputs {
+  margin-left: 660px;
+  margin-top: 60px;
+  border: none;
+ 
+}
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin: 5px;
+  border-radius: 30px;
+  padding-left: 10px;
+  background-color: rgba(212, 246, 255, 0.656);
+  border: none;
+}
+
+.email {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin: 5px;
+  border-radius: 30px;
+  padding-left: 10px;
+  background-color: rgba(212, 246, 255, 0.656);
+  border: none;
+
+}
+
+.feedback {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin-top: 5px;
+  margin: 5px;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-top: 8px;
+  background-color: rgba(212, 246, 255, 0.656);
+  border: none;
+}
+
+.submit {
+  text-align: center;
+}
+
+.b-submit {
+  font-size: 30px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(0, 55, 255, 0.315);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.246);
+}
+
+.b-submit:hover {
+  background-color: rgb(134, 215, 165);
+  text-align: center;
+
+}
