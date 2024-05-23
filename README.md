@@ -4,7 +4,7 @@
 
 EcoNest is a web application designed to help users discover average rental prices in neighborhoods near specific landmarks. Whether you're relocating for work, studying abroad, or simply curious about housing costs in various areas, EcoNest provides you with up-to-date and accurate rent data.
 
-This project was developed during the hackathon "Override" in September 2023.
+This project was developed during the Override Hackathon in September 2023.
 
 ## Features
 
